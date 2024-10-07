@@ -10,7 +10,7 @@
 
     <section class="area-titulo">
         <div id="titulo">
-            <h1>jdhsdjsh</h1>
+            <h1>SpaceCalculator</h1>
         </div>
     </section>
 
@@ -21,35 +21,46 @@
                 <input type="number" name="" id="visor">
             </div>
             <div class="area-componentes">
-                    <button id="clear" class="clear">CE</button>
+                <div class="componentes">
+                    <button id="clear" class="ops">CE</button>
                     
-                    <button data-ops="plus" class="ops">+</button>
-
-                  
+                    <button data-ops="plus" class="ops"><-</button>
+                    <button data-ops="plus" class="ops">%</button>
+                    <button data-ops="plus" class="ops">/</button>
+                </div>
                     <!-- <div id="viewer" class="viewer">0</div> -->
-                  
+                <div class="componentes">
                     <button class="num" data-num="7">7</button>
                     <button class="num" data-num="8">8</button>
                     <button class="num" data-num="9">9</button>
-                    <button data-ops="plus" class="ops">+</button>
-                  
+                    <button data-ops="plus" class="ops">*</button>
+                </div>
+
+                <div class="componentes">
                     <button class="num" data-num="4">4</button>
                     <button class="num" data-num="5">5</button>
                     <button class="num" data-num="6">6</button>
                     <button data-ops="minus" class="ops">-</button>
-                  
+                </div>
+
+                <div class="componentes">
                     <button class="num" data-num="1">1</button>
                     <button class="num" data-num="2">2</button>
                     <button class="num" data-num="3">3</button>
-                    <button data-ops="times" class="ops">*</button>
-                  
+                    <button data-ops="times" class="ops">+</button>
+                </div>
+
+                <div class="componentes">
                     <button class="num" data-num="0">0</button>
-                    <button class="num" data-num=".">.</button>
-                    <button id="equals" class="equals" data-result="">=</button>
-                    <button data-ops="divided by" class="ops">/</button>
+                    <button class="num" data-num=".">+-</button>
+                    <button id="equals" class="ops" data-result="">,</button>
+                    <button data-ops="divided by" class="ops">=</button>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="script/script.js"></script>
 
 </body>
 </html>
