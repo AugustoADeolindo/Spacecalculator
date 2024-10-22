@@ -9,7 +9,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 213px;
-  
+    color: #ffff;
 }
 
 .area-titulo{
@@ -52,7 +52,17 @@ body{
     border-radius: 6px;
 }
 
-input {
+input{
     width: 200px;
     height: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#visor{
+    text-align: right;
 }
