@@ -1,67 +1,121 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-image: url('../assets/background1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100vh;              
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 213px;
-  
 }
 
-.area-titulo{
-    width: 3cm;
+
+.area-titulo {
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: orange;
+    font-size: 2em; 
 }
 
-.area-calculadora{
-    width: 350px;
+.area-calculadora {
+    width: 90vw; 
+    max-width: 350px; 
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0C0C31;
     border-radius: 10px;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.area-componentes{
+.area-componentes {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 2vh 0;
 }
 
-.ops{
-    width: 50px;
-    height: 50px;
-    color: #ffff;
+.componentes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.ops, .num, .muda-sinal {
+    width: 15vw; 
+    max-width: 50px;
+    height: 15vw;
+    max-height: 50px;
+    font-size: 1em;
+    color: #FFFFFF;
     background-color: #7000FF;
     border-radius: 6px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.num{
-    width: 50px;
-    height: 50px;
+
+.num {
     color: #7000FF;
-    border-radius: 6px;
+    background-color: #FFFFFF;
 }
-
-.muda-sinal{
-    width: 50px;
-    height: 50px;
-    color: #ffff;
-    background-color: #7000FF;
-    border-radius: 6px;
-}
-
 
 input {
-    width: 200px;
-    height: 30px;
+    width: 80%;
+    max-width: 200px;
+    height: 35px;
+    font-size: 1em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+/* Media Query para tablets (até 768px) */
+@media (max-width: 768px) {
+    .area-calculadora {
+        width: 80vw;
+    }
+
+    .ops, .num, .muda-sinal {
+        width: 18vw;
+        height: 18vw;
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    input {
+        max-width: 180px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+}
+
+/* Media Query para smartphones (até 480px) */
+@media (max-width: 480px) {
+    .area-titulo {
+        font-size: 1.5em;
+    }
+
+    .ops, .num, .muda-sinal {
+        width: 20vw;
+        height: 20vw;
+        max-width: 50px;
+        max-height: 50px;
+        font-size: 0.9em;
+    }
+
+    input {
+        max-width: 150px;
+        height: 25px;
+        font-size: 0.8em;
+    }
 }
